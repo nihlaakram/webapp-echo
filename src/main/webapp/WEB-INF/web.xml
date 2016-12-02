@@ -8,6 +8,9 @@
          version="3.1">
 
 <display-name>Simple Servlet Application</display-name>
+   <listener>
+        <listener-class>SessionListner</listener-class>
+    </listener>
 <servlet>
     <servlet-name>simpleServlet</servlet-name>
     <servlet-class>Test</servlet-class>
@@ -16,6 +19,7 @@
 
 <servlet-mapping>
     <servlet-name>simpleServlet</servlet-name>
-    <url-pattern>/webapp</url-pattern>
+    <url-pattern>/echo</url-pattern>
 </servlet-mapping>
+
 </web-app>
